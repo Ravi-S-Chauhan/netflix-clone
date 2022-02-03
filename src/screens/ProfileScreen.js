@@ -18,16 +18,18 @@ function ProfileScreen() {
             alt=""
             className=""
           />
-        </div>
-        <div className="profileScreen__details">
-          <h2>{user.email}</h2>
-          <div className="profileScreen__plans">
-            <button
-              className="profileScreen__signOut"
-              onClick={() => auth.signOut()}
-            >
-              Sign out
-            </button>
+
+          <div className="profileScreen__details">
+            <h2>{user.email}</h2>
+            <div className="profileScreen__plans">
+              <h3>Plans</h3>
+              <button
+                className="profileScreen__signOut"
+                onClick={() => auth.signOut()}
+              >
+                Sign out
+              </button>
+            </div>
           </div>
         </div>
       </div>
